@@ -1,0 +1,19 @@
+[Unit]
+Description=Process the QRNs
+Documentation=https://amechain.io
+ConditionPathExists=/root/amechain_quantum/quantum/.env
+After=networking.service
+
+[Service]
+Type=simple
+User=root
+Group=root
+TimeoutStartSec=0
+Restart=on-failure
+RestartSec=30s
+WorkingDirectory=/root/amechain_quantum/quantum
+ExecStart=bash run_qrn_code.sh
+SyslogIdentifier=qrn-processing
+
+[Install]
+WantedBy=multi-user.target

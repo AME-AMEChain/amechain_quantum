@@ -1,0 +1,13 @@
+__pycache__
+
+.env
+*.log
+*.log.*
+logs/*
+
+.vscode
+
+cert_files/*
+*.pem
+
+*wrapper.py

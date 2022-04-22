@@ -1,0 +1,19 @@
+[Unit]
+Description=Run and manage the Amechain node
+Documentation=https://amechain.io
+ConditionPathExists=/root/blockchain/config/genesis.json
+After=networking.service
+
+[Service]
+Type=simple
+User=root
+Group=root
+TimeoutStartSec=0
+Restart=on-failure
+RestartSec=30s
+WorkingDirectory=/root/amechain_quantum/amechain
+ExecStart=bash run_amechain_node.sh
+SyslogIdentifier=amechain-node
+
+[Install]
+WantedBy=multi-user.target

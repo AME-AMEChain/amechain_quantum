@@ -1,0 +1,54 @@
+# Valid TOML config file
+
+### Blockchain
+genesis-file="/root/blockchain/config/genesis.json" # Path to the custom genesis file
+data-path="/root/blockchain/data"
+
+### Network
+bootnodes=[
+    # node1.amechain.io
+    "enode://14b274edb0df84844593ab6bf0f26881ffc4c305fe58242fa1a2ff79d761441db3548044f27f7a84b3aabd509edf1cace1b94608b42ebfde5a022e5c2ff50d8d@167.71.230.219:30303",
+
+    # node2.amechain.io
+    "enode://aeebb5702dbe25441a21065f66a979c04faa5dd3a091c2e6454567c1d5ec1464dc420a5d5ca6cec5e5bba317da28bc8806795451be0b00eb2df16fb1e4ce0507@142.93.50.13:30303",
+
+    # node3.amechain.io
+    "enode://106e831aee108a5aaab6daf1cc5d1deb212b808a7bd5b818a0f4731e04986a85319a7058cf7fc5bc2f5099820e826d4138c3a04651f0062509e548b08ba1889e@167.172.47.87:30303",
+
+    # node4.amechain.io
+    "enode://a2868cd0295a04f5e9e1cdec7544521eeb212d7542adf7ba74e16aefbea45662a9c8d8486346beb97f530fe76ecbe79a34cb85d52e2dc18f0922ac3002df40a3@167.71.201.159:30303"
+]
+
+p2p-host=""
+p2p-port=30303
+max-peers=30
+
+# permissions
+permissions-nodes-config-file-enabled=true
+permissions-nodes-config-file="/root/blockchain/config/permissions_config.toml"
+permissions-accounts-config-file-enabled=false
+
+### key
+node-private-key-file="/root/blockchain/data/keys/nodekey.pri"
+
+### RPC
+rpc-http-enabled=true
+rpc-http-host="127.0.0.1"
+rpc-http-port=8545
+rpc-http-api=["ETH","NET","WEB3"]
+rpc-http-cors-origins=["*"]
+
+rpc-ws-enabled=true
+rpc-ws-host="127.0.0.1"
+rpc-ws-port=8546
+rpc-ws-api=["ADMIN","EEA","WEB3","ETH","NET","PERM","QBFT"]
+
+graphql-http-enabled=false
+
+host-allowlist=["*"]
+
+### Mining
+# miner-enabled=true
+
+### Gas
+min-gas-price=5000000000
