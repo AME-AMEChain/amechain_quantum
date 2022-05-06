@@ -25,6 +25,10 @@ apt update
 apt install curl rsync -y
 echo ""
 
+# INSTALL wscat
+apt install nodejs npm -y
+npm install -g wscat
+
 # INSTALL JAVA
 
 JAVA_VER="16.0.2"
