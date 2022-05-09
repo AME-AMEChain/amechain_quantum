@@ -27,9 +27,10 @@ if [[ ! -f "$GIT_DIR/quantum/.env" ]]
     then
         echo -e "${red}Aborting...${clear}"
         echo "File $GIT_DIR/quantum/.env does not exist on your filesystem."
-        echo "Step 1: If you are running a validator node, get the .env file by contacting amechain.io"
+        echo "If you are running a validator node, follow Steps 1,2,3. If you are running a non-validator node, follow Step 3 only."
+        echo "Step 1: Get the .env file by contacting amechain.io"
         echo "Step 2: Copy it to /root/amechain_quantum/quantum/"
-        echo "Step 3: If you are running either a validator or non-validator node, run the script https://github.com/amechainq/amechain_quantum/blob/main/run-2.sh"
+        echo "Step 3: Run the script https://github.com/amechainq/amechain_quantum/blob/main/run-2.sh"
         exit
 fi
 
