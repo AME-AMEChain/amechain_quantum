@@ -8,6 +8,7 @@
     "byzantiumBlock": 0,
     "constantinoplefixblock" : 0,
     "londonBlock": 1297000,
+    "eip1559Block": 1334200,
     "qbft" : {
       "blockperiodseconds" : 5,
       "requesttimeoutseconds" : 10,
