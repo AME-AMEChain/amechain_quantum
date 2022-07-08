@@ -9,6 +9,7 @@
     "londonBlock": 1297000,
     "eip1559Block": 1334200,
     "constantinoplefixblock" : 1369080,
+    "berlinBlock": 1483530,
     "qbft" : {
       "blockperiodseconds" : 5,
       "requesttimeoutseconds" : 10,
