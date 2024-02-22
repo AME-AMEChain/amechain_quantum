@@ -31,8 +31,8 @@ npm install -g wscat
 
 # INSTALL JAVA
 
-JAVA_VER="16.0.2"
-JAVA_URL="https://download.java.net/java/GA/jdk16.0.2/d4a915d82b4c4fbb9bde534da945d746/7/GPL/openjdk-16.0.2_linux-x64_bin.tar.gz"
+JAVA_VER="17.0.6"
+JAVA_URL=""https://download.oracle.com/java/17/archive/jdk-17.0.6_linux-x64_bin.tar.gz"
 
 # Step 1: Installing java
 echo -e "${green}Installing java...${clear}"
@@ -78,7 +78,7 @@ fi
 
 # Step 2: Installing besu
 echo -e "${green}Installing Hyperledger besu...${clear}"
-BESU_VER="22.1.2"       # Change this value to install a different version
+BESU_VER="24.1.0"       # Change this value to install a different version
 if [[ `command -v besu` ]]
     then
         echo "Hyperledger besu is already installed"
