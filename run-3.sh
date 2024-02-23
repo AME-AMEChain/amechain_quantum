@@ -32,7 +32,7 @@ npm install -g wscat
 # INSTALL JAVA
 
 JAVA_VER="17.0.6"
-JAVA_URL=""https://download.oracle.com/java/17/archive/jdk-17.0.6_linux-x64_bin.tar.gz"
+JAVA_URL="https://download.oracle.com/java/17/archive/jdk-17.0.6_linux-x64_bin.tar.gz"
 
 # Step 1: Installing java
 echo -e "${green}Installing java...${clear}"
@@ -44,9 +44,9 @@ if [[ `command -v java` ]]
         echo "Downloading java package..."
         curl -O $JAVA_URL
         echo "Extracting java package..."
-        tar -xf "openjdk-${JAVA_VER}_linux-x64_bin.tar.gz"
+        tar -xvf ./blockchain/temp/jdk-17.0.6_linux-x64_bin.tar.gz
         echo "Copying java package to system path..."
-        rsync "jdk-16.0.2" /opt/ -a  
+        rsync "jdk-17.0.6" /opt/ -a  
 fi
 
 # Step 2: Adding java to $PATH
