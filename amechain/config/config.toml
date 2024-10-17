@@ -51,4 +51,4 @@ host-allowlist=["*"]
 # miner-enabled=true
 
 ### Gas
-min-gas-price=5000000000
+min-gas-price=10000000000
