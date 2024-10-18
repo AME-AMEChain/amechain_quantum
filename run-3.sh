@@ -44,9 +44,9 @@ if [[ `command -v java` ]]
         echo "Downloading java package..."
         curl -O $JAVA_URL
         echo "Extracting java package..."
-        tar -xvf ./blockchain/temp/jdk-17.0.12_linux-x64_bin.tar.gz
+        tar -xvf ./jdk-${JAVA_VER}_linux-x64_bin.tar.gz -C jdk-${JAVA_VER}
         echo "Copying java package to system path..."
-        rsync "jdk-17.0.12" /opt/ -a  
+        rsync "jdk-${JAVA_VER}" /opt/ -a
 fi
 
 # Step 2: Adding java to $PATH
