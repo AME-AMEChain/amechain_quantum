@@ -44,7 +44,7 @@ if [[ `command -v java` ]]
         echo "Downloading java package..."
         curl -O $JAVA_URL
         echo "Extracting java package..."
-        tar -xvf ./jdk-${JAVA_VER}_linux-x64_bin.tar.gz -C jdk-${JAVA_VER}
+        tar -xvf ./jdk-${JAVA_VER}_linux-x64_bin.tar.gz -C /opt
         echo "Copying java package to system path..."
         rsync "jdk-${JAVA_VER}" /opt/ -a
 fi
